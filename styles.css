@@ -1,0 +1,119 @@
+/* estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* barra de navegacion */
+.custom-navbar {
+    background-color: #4b3621;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+/* seccion hero */
+.hero-section {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 5rem 0;
+}
+
+.hero-img {
+    width: 75%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* botones */
+.custom-btn {
+    background-color: #4b3621;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #3a2a19;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* countdown */
+.countdown-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item span:first-child {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+/* seccion de eventos */
+.events-section .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.events-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card {
+    background-color: #e6c88b;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* pie de pagina */
+.custom-footer {
+    background-color: #4b3621;
+}
+
+/* ajustes */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    .hero-img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    
+    .countdown-item {
+        margin-bottom: 1rem;
+    }
+    
+    .countdown-item:last-child {
+        margin-bottom: 0;
+    }
+}
