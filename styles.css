@@ -71,14 +71,16 @@ body {
 }
 
 /* seccion de eventos */
-.events-section .card {
+.events-section .card,
+.events-page .card {
     border: none;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.events-section .card:hover {
+.events-section .card:hover,
+.events-page .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -90,6 +92,17 @@ body {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+/* pagina de eventos */
+.events-page {
+    background-color: #f8f9fa;
+}
+
+.page-title {
+    color: #4b3621;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* pie de pagina */
@@ -115,5 +128,13 @@ body {
     
     .countdown-item:last-child {
         margin-bottom: 0;
+    }
+    
+    .events-page .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
     }
 }
