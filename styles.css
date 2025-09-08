@@ -70,7 +70,7 @@ body {
     line-height: 1;
 }
 
-/* seccion de eventos */
+/* seccion de eventos - TARJETAS */
 .events-section .card,
 .events-page .card {
     border: none;
@@ -89,12 +89,35 @@ body {
     background-color: #e6c88b;
 }
 
-.card-img-top {
+/* imagenes en tarjetas (corregido, las imagenes se veian recortadas) */
+.card-img-container {
     height: 200px;
-    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
-/* pagina de eventos */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Imagenes que necesitan ajustes a la pagina */
+.card-img-top.banana-cat {
+    object-fit: cover;
+    object-position: center top;
+}
+
+.card-img-top.big-flopa {
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+/* página de eventos específica */
 .events-page {
     background-color: #f8f9fa;
 }
@@ -136,5 +159,15 @@ body {
     
     .page-title {
         font-size: 2rem;
+    }
+    
+    .card-img-container {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-container {
+        height: 160px;
     }
 }
