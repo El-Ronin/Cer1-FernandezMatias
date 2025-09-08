@@ -293,3 +293,128 @@ body {
         max-width: 65%;
     }
 }
+/* seccion de comunidad */
+.comunidad-section {
+    background-color: #8b5e3c;
+    color: white;
+    min-height: 100vh;
+}
+
+.comunidad-title {
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+}
+
+/* Tarjetas de comentarios */
+.custom-comment-card {
+    background-color: #e6c88b !important;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.custom-comment-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagenes en comentarios */
+.comment-img {
+    max-width: 25%;
+    border-radius: 8px;
+    border: 3px solid #4b3621;
+}
+
+.banana-comment-img {
+    max-width: 25%;
+}
+
+.alien-comment-img {
+    max-width: 30%;
+}
+
+/* Formulario de comentarios */
+.custom-comment-form {
+    background-color: #e6c88b !important;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.comment-form-header {
+    background-color: #4b3621 !important;
+    border: none;
+    border-radius: 10px 10px 0 0 !important;
+    color: white;
+}
+
+.comment-submit-btn {
+    background-color: #ad8a3e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.comment-submit-btn:hover {
+    background-color: #8b6d2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Responsive para comunidad */
+@media (max-width: 768px) {
+    .comunidad-title {
+        font-size: 2rem;
+    }
+    
+    .comment-img {
+        max-width: 45%;
+    }
+    
+    .banana-comment-img {
+        max-width: 45%;
+    }
+    
+    .alien-comment-img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .comunidad-title {
+        font-size: 1.75rem;
+    }
+    
+    .comment-img {
+        max-width: 60%;
+    }
+    
+    .banana-comment-img {
+        max-width: 60%;
+    }
+    
+    .alien-comment-img {
+        max-width: 65%;
+    }
+    
+    .custom-comment-form {
+        margin-top: 1rem;
+    }
+}
+
