@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi Eventos 😸 - Comunidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Michi Eventos 😸</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comunidad.html">Comunidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="comunidad-section py-5">
+        <div class="container">
+            <h1 class="text-center text-white mb-5 comunidad-title">Comunidad 😺</h1>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="mb-5" id="comments-container">
+                        <!-- comentario 1 -->
+                        <div class="card mb-3 custom-comment-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title">MichiFan 😸</h5>
+                                    <small class="text-muted">20 Ago, 2025 - 10:30 hrs</small>
+                                </div>
+                                <p class="card-text">Acabo de ver que habrá un evento del Gato Banana!!! debo ir a toda costa 😍😭.</p>
+                                <img src="https://ih1.redbubble.net/image.5121978944.6680/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" class="img-fluid mt-3 comment-img banana-comment-img" alt="Gato banana llorando">
+                            </div>
+                        </div>
+                        
+                        <!-- comentario 2 -->
+                        <div class="card mb-3 custom-comment-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title">BigFlopaLover 🐾</h5>
+                                    <small class="text-muted">15 Sept, 2025 - 15:45 hrs</small>
+                                </div>
+                                <p class="card-text">Big Flopa es demasiado cool… casi olvidé alimentar a mi humano mientras lo veía.</p>
+                                <img src="https://media.tenor.com/Ngb9u3HnHcIAAAAe/gato-riendo.png" class="img-fluid mt-3 comment-img" alt="Gato riendose">
+                            </div>
+                        </div>
+                        
+                        <!-- comentario 3 -->
+                        <div class="card mb-3 custom-comment-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title">AbduccinoGatuno 👽</h5>
+                                    <small class="text-muted">18 Ago, 2025 - 09:15 hrs</small>
+                                </div>
+                                <p class="card-text"> Si alguien ve un objeto volador no identificado flotando en el cielo, no se asusten… era yo practicando abducción gatuna.</p>
+                                <img src="https://media.tenor.com/w_Y5SOgH31wAAAAe/alien-cat.png" class="img-fluid mt-3 comment-img alien-comment-img" alt="AbduccinoGatuno">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario de comentarios -->
+                    <div class="card custom-comment-form">
+                        <div class="card-header comment-form-header">
+                            <h5 class="mb-0">Deja tu comentario</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="commentForm">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Nombre/Alias</label>
+                                    <input type="text" class="form-control" id="username" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" rows="3" maxlength="500" required></textarea>
+                                    <div class="form-text">
+                                        <span id="char-count">0</span>/500 caracteres
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn comment-submit-btn">Publicar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>🐾 Michi Eventos 😼 &copy; 2025 - Todos los derechos reservados</p>
+            <p>Comparte tus experiencias gatunas y conoce a otros amantes de los michis</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/comunidad.js"></script>
+</body>
+</html>
